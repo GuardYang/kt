@@ -1,0 +1,19 @@
+package com.ysr
+
+/**
+ * Created by Administrator on 2017/5/19.
+ */
+fun main(args: Array<out String>) {
+    val user = User("ysr", 20, "123456")
+//    val info = LoginInfo()
+//    info.username = "ysr"
+    //print(user.name)
+    //反射
+    RegisterInfo::class.constructors.map(::println)
+}
+
+class RegisterInfo {
+    fun test() {
+
+    }
+}
