@@ -3,6 +3,7 @@ package com.ysr
 /**
  * Created by Administrator on 2017/5/19.
  */
+
 fun main(args: Array<out String>) {
     val user = User("ysr", 20, "123456")
 //    val info = LoginInfo()
@@ -12,8 +13,14 @@ fun main(args: Array<out String>) {
     RegisterInfo::class.constructors.map(::println)
 }
 
+
 class RegisterInfo {
     fun test() {
 
     }
+}
+var count=0
+set(value) {
+    if (value>=0)
+        field=value
 }
