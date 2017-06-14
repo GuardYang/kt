@@ -33,6 +33,7 @@ fun main(args: Array<String>) {
 //    lang.myMethod()
 
 }
+
 //重写
 fun Lang.myMethod() {
     val id = when (this) {
