@@ -32,5 +32,17 @@ fun main(array: Array<String>) {
     println(arrays.toSet())
     //切割
     val Intercept = arrays.sliceArray(2..4)
-    
+
+
+
+    var mutableListOfs = mutableListOf("java","c","C++","java","Visual Basic","	Scala","Kotlin","java","c","Kotlin")
+    //数组末尾添加
+    mutableListOfs.add("Swift")
+    //添加一个数组
+    mutableListOfs.addAll(arrays)
+    //选定位置添加
+
+
+
+
 }
