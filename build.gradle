@@ -32,5 +32,7 @@ dependencies {
     //反射包
     compile "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
     compile "io.reactivex:rxjava:1.2.1"
+    compile "com.squareup.retrofit2:retrofit:2.1.0"
+    compile "com.squareup.retrofit2:converter-gson:2.1.0"
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
