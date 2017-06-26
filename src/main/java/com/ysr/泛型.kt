@@ -12,6 +12,16 @@ fun main(array: Array<String>) {
         return numbers.sumByDouble { it.toDouble() }
     }
 
+    //多重约束
+    fun <T> bigPart(list: Array<T>, two: T): List<T>
+            where T : Number, T : Comparable<T> {
+        return list.filter { it >= two }.sorted()
+    }
+//    println(getSum(312, 3123.6, 411))
+    println(bigPart(arrayOf(312, 3123, 411), 3))
+    class Mys : source<String>() {
+        override fun del(): String = "qwewqe"
+    }
 
 }
 
