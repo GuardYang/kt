@@ -25,11 +25,11 @@ enum class Lang(val type: String) {
 }
 
 fun main(args: Array<String>) {
-    if (args.size == 0) return
-    val lang = Lang.parse(args[0])
-    print(lang)
+//    if (args.size == 0) return
+//    val lang = Lang.parse(args[0])
+//    print(lang)
 //    lang.getMenu()
-
+    println(Lang.values().joinToString { "${it.name}:${it.type}" })
 //    lang.myMethod()
 
 }
@@ -43,4 +43,10 @@ fun Lang.myMethod() {
         Lang.Four -> "8"
     }
     print(id)
+}
+
+enum class country {
+    china,
+    usa,
+    Korea
 }

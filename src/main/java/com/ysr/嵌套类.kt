@@ -18,13 +18,15 @@ class News {
         fun getDate(name: String) {
             //内部类可以访问主类属性
             address = name
+            address.let(::println)
         }
     }
 }
 
 fun main(array: Array<String>) {
 //    println(News.Cate().listDesc)
-    News.Cate().listDesc.let (::println)
+    News.Cate().listDesc.let(::println)
     //更改地区
-
+    News().Langgue().getDate("dada")
+//    News().address.let(::println)
 }
