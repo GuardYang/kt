@@ -35,14 +35,15 @@ fun main(array: Array<String>) {
 
 
 
-    var mutableListOfs = mutableListOf("java","c","C++","java","Visual Basic","	Scala","Kotlin","java","c","Kotlin")
+    var mutableListOfs :MutableList<String> =ArrayList()
+//           mutableListOf("java","c","C++","java","Visual Basic","	Scala","Kotlin","java","c","Kotlin")
     //数组末尾添加
     mutableListOfs.add("Swift")
     //添加一个数组
-    mutableListOfs.addAll(arrays)
+//    mutableListOfs.addAll(arrays)
     //选定位置添加
 
-
+    mutableListOfs.size.toString().let (::println)
 
 
 }
